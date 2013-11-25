@@ -28,6 +28,7 @@ import java.util.Date;
 import fr.itinerennes.api.client.model.Agency;
 import fr.itinerennes.api.client.model.FeedInfo;
 import fr.itinerennes.api.client.model.StopSchedule;
+import fr.itinerennes.api.client.model.StopWithRoutes;
 import fr.itinerennes.api.client.model.TripSchedule;
 
 /**
@@ -54,6 +55,17 @@ public interface ItineRennesApiClient {
      *             an error occurred
      */
     Agency getAgency(String agencyId) throws IOException;
+
+    /**
+     * Gets the stop details.
+     * 
+     * @param stopId
+     *            the identifier of the stop
+     * @return the stop details
+     * @throws IOException
+     *             an error occurred
+     */
+    StopWithRoutes getStop(final String stopId) throws IOException;
 
     /**
      * Gets the trip details.

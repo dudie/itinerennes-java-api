@@ -37,6 +37,7 @@ import fr.itinerennes.api.client.gson.ItineRennesApiGsonFactory;
 import fr.itinerennes.api.client.model.Agency;
 import fr.itinerennes.api.client.model.FeedInfo;
 import fr.itinerennes.api.client.model.StopSchedule;
+import fr.itinerennes.api.client.model.StopWithRoutes;
 import fr.itinerennes.api.client.model.TripSchedule;
 
 /**
@@ -107,6 +108,17 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
     public Agency getAgency(final String agencyId) throws IOException {
         final String urlCall = String.format("%s/agency/%s.json", baseUrl, agencyId);
         return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<Agency>(Agency.class, gson));
+    }
+
+    /**
+     * {@inheritDoc}
+     * 
+     * @see fr.itinerennes.api.client.ItineRennesApiClient#getStop(java.lang.String)
+     */
+    @Override
+    public StopWithRoutes getStop(final String stopId) throws IOException {
+        final String urlCall = String.format("%s/stop/%s.json", baseUrl, stopId);
+        return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<StopWithRoutes>(StopWithRoutes.class, gson));
     }
 
     /**
