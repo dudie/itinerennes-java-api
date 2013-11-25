@@ -80,7 +80,7 @@ public class JsonItineRennesApiClientTest {
         final ClientConnectionManager connexionManager = new SingleClientConnManager(null, registry);
 
         final HttpClient httpClient = new DefaultHttpClient(connexionManager, null);
-        obaClient = new JsonItineRennesApiClient(httpClient, SERVER.getUrl().toString(), "test");
+        obaClient = new JsonItineRennesApiClient(httpClient, SERVER.getUrl().toString());
     }
 
     /**

@@ -70,10 +70,8 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
      *            an http client
      * @param url
      *            the url of the ItineRennes API
-     * @param key
-     *            the API key
      */
-    public JsonItineRennesApiClient(final HttpClient httpClient, final String url, final String key) {
+    public JsonItineRennesApiClient(final HttpClient httpClient, final String url) {
 
         this.httpClient = httpClient;
         this.baseUrl = url.replaceAll("/$", "");
