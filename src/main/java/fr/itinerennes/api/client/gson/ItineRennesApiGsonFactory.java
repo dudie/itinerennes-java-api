@@ -38,15 +38,12 @@ import fr.itinerennes.api.client.model.Time;
  */
 public class ItineRennesApiGsonFactory {
 
-    private static final String DATE_FORMAT = "yyyy-MM-dd HH:mm";
-
     public static Gson newInstance() {
         return newInstance(false);
     }
 
     public static Gson newInstance(final boolean prettyJson) {
         final GsonBuilder gb = new GsonBuilder();
-        gb.setDateFormat(DATE_FORMAT);
         gb.addSerializationExclusionStrategy(new ExcludeAnnotationStrategy());
         gb.registerTypeAdapter(Time.class, new TimeTypeAdapter());
         gb.registerTypeAdapter(Locale.class, new LocaleTypeAdapter());
