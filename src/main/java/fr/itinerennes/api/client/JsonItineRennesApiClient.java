@@ -88,8 +88,9 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
     private HttpGet createOBARequest(final String path) {
 
         final HttpGet req = new HttpGet(path);
-        req.addHeader(H_ACCEPT, "text/json");
         req.addHeader(H_ACCEPT, "application/json");
+        req.addHeader(H_ACCEPT, "text/json");
+        req.addHeader(H_ACCEPT, "text/plain");
 
         LOGGER.info("GET: {}", path);
 
