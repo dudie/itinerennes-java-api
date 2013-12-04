@@ -1,0 +1,3099 @@
+/*
+ * [license]
+ * ItineRennes Java API client
+ * ----
+ * Copyright (C) 2010 - 2013 Dudie
+ * ----
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the 
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public 
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * [/license]
+ */
+{
+  "date": "2013-11-04 00:00",
+  "stop": {
+    "id": "2_1017",
+    "lat": 48.10834873,
+    "lon": -1.6801754,
+    "name": "Les Halles",
+    "code": 1017
+  },
+  "routes": [
+    {
+      "id": "2_0001",
+      "textColor": "FFFFFF",
+      "color": "90C01B",
+      "description": "Majeure",
+      "longName": "Cesson-Sévigné (Champs Blancs) \u003c\u003e Chantepie (Rosa Parks)",
+      "shortName": "1",
+      "type": 3,
+      "agencyId": "2"
+    },
+    {
+      "id": "2_0005",
+      "textColor": "ffffff",
+      "color": "eb8200",
+      "description": "Majeure",
+      "longName": "Patton \u003c\u003e Lycée Bréquigny",
+      "shortName": "5",
+      "type": 3,
+      "agencyId": "2"
+    },
+    {
+      "id": "2_0009",
+      "textColor": "FFFFFF",
+      "color": "004B9B",
+      "description": "Majeure",
+      "longName": "Saint-Laurent \u003c\u003e Cleunay",
+      "shortName": "9",
+      "type": 3,
+      "agencyId": "2"
+    },
+    {
+      "id": "2_0057",
+      "textColor": "FFFFFF",
+      "color": "A57223",
+      "description": "Métropolitaine",
+      "longName": "Rennes (République) \u003c\u003e Saint-Jacques-de-la-Lande / Bruz (Centre)",
+      "shortName": "57",
+      "type": 3,
+      "agencyId": "2"
+    }
+  ],
+  "stopTimes": [
+    {
+      "arrival": "05:46",
+      "departure": "05:46",
+      "serviceId": "2_14",
+      "tripId": "2_12235",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "05:46",
+      "departure": "05:46",
+      "serviceId": "2_14",
+      "tripId": "2_14085",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "05:46",
+      "departure": "05:46",
+      "serviceId": "2_10",
+      "tripId": "2_20514",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "05:46",
+      "departure": "05:46",
+      "serviceId": "2_14",
+      "tripId": "2_747",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "06:06",
+      "departure": "06:06",
+      "serviceId": "2_14",
+      "tripId": "2_14090",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "06:26",
+      "departure": "06:26",
+      "serviceId": "2_14",
+      "tripId": "2_12240",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "06:26",
+      "departure": "06:26",
+      "serviceId": "2_14",
+      "tripId": "2_14095",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "06:26",
+      "departure": "06:26",
+      "serviceId": "2_10",
+      "tripId": "2_20504",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "06:26",
+      "departure": "06:26",
+      "serviceId": "2_14",
+      "tripId": "2_87",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "06:41",
+      "departure": "06:41",
+      "serviceId": "2_14",
+      "tripId": "2_14100",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "06:46",
+      "departure": "06:46",
+      "serviceId": "2_14",
+      "tripId": "2_12245",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "06:46",
+      "departure": "06:46",
+      "serviceId": "2_14",
+      "tripId": "2_757",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "06:53",
+      "departure": "06:53",
+      "serviceId": "2_14",
+      "tripId": "2_14135",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "06:56",
+      "departure": "06:56",
+      "serviceId": "2_14",
+      "tripId": "2_5686",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz via Porte de Ker-Lann"
+    },
+    {
+      "arrival": "07:03",
+      "departure": "07:03",
+      "serviceId": "2_14",
+      "tripId": "2_12250",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:03",
+      "departure": "07:03",
+      "serviceId": "2_14",
+      "tripId": "2_14140",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "07:10",
+      "departure": "07:10",
+      "serviceId": "2_14",
+      "tripId": "2_122",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "07:13",
+      "departure": "07:13",
+      "serviceId": "2_14",
+      "tripId": "2_12255",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:15",
+      "departure": "07:15",
+      "serviceId": "2_14",
+      "tripId": "2_14145",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "07:16",
+      "departure": "07:16",
+      "serviceId": "2_14",
+      "tripId": "2_5691",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz via Porte de Ker-Lann"
+    },
+    {
+      "arrival": "07:21",
+      "departure": "07:21",
+      "serviceId": "2_14",
+      "tripId": "2_12260",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:22",
+      "departure": "07:22",
+      "serviceId": "2_14",
+      "tripId": "2_14150",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "07:24",
+      "departure": "07:24",
+      "serviceId": "2_14",
+      "tripId": "2_807",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "07:29",
+      "departure": "07:29",
+      "serviceId": "2_14",
+      "tripId": "2_12265",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:30",
+      "departure": "07:30",
+      "serviceId": "2_14",
+      "tripId": "2_14155",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "07:32",
+      "departure": "07:32",
+      "serviceId": "2_14",
+      "tripId": "2_572",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "07:35",
+      "departure": "07:35",
+      "serviceId": "2_14",
+      "tripId": "2_12270",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:36",
+      "departure": "07:36",
+      "serviceId": "2_14",
+      "tripId": "2_5696",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz via Porte de Ker-Lann"
+    },
+    {
+      "arrival": "07:38",
+      "departure": "07:38",
+      "serviceId": "2_14",
+      "tripId": "2_14160",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "07:40",
+      "departure": "07:40",
+      "serviceId": "2_14",
+      "tripId": "2_762",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "07:45",
+      "departure": "07:45",
+      "serviceId": "2_14",
+      "tripId": "2_12945",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:46",
+      "departure": "07:46",
+      "serviceId": "2_14",
+      "tripId": "2_14165",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "07:46",
+      "departure": "07:46",
+      "serviceId": "2_14",
+      "tripId": "2_927",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "07:51",
+      "departure": "07:51",
+      "serviceId": "2_14",
+      "tripId": "2_12275",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:53",
+      "departure": "07:53",
+      "serviceId": "2_14",
+      "tripId": "2_14170",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "07:55",
+      "departure": "07:55",
+      "serviceId": "2_14",
+      "tripId": "2_782",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "07:56",
+      "departure": "07:56",
+      "serviceId": "2_14",
+      "tripId": "2_12280",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "07:56",
+      "departure": "07:56",
+      "serviceId": "2_14",
+      "tripId": "2_5701",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz via Porte de Ker-Lann"
+    },
+    {
+      "arrival": "07:59",
+      "departure": "07:59",
+      "serviceId": "2_14",
+      "tripId": "2_14180",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:04",
+      "departure": "08:04",
+      "serviceId": "2_14",
+      "tripId": "2_692",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "08:05",
+      "departure": "08:05",
+      "serviceId": "2_14",
+      "tripId": "2_12285",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "08:06",
+      "departure": "08:06",
+      "serviceId": "2_14",
+      "tripId": "2_14310",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:13",
+      "departure": "08:13",
+      "serviceId": "2_14",
+      "tripId": "2_12395",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "08:13",
+      "departure": "08:13",
+      "serviceId": "2_14",
+      "tripId": "2_712",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "08:14",
+      "departure": "08:14",
+      "serviceId": "2_14",
+      "tripId": "2_14185",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:16",
+      "departure": "08:16",
+      "serviceId": "2_14",
+      "tripId": "2_5706",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz via Porte de Ker-Lann"
+    },
+    {
+      "arrival": "08:22",
+      "departure": "08:22",
+      "serviceId": "2_14",
+      "tripId": "2_717",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "08:23",
+      "departure": "08:23",
+      "serviceId": "2_14",
+      "tripId": "2_12400",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "08:24",
+      "departure": "08:24",
+      "serviceId": "2_14",
+      "tripId": "2_14175",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:30",
+      "departure": "08:30",
+      "serviceId": "2_14",
+      "tripId": "2_12405",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "08:30",
+      "departure": "08:30",
+      "serviceId": "2_14",
+      "tripId": "2_732",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "08:32",
+      "departure": "08:32",
+      "serviceId": "2_14",
+      "tripId": "2_14250",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:36",
+      "departure": "08:36",
+      "serviceId": "2_14",
+      "tripId": "2_5711",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "08:38",
+      "departure": "08:38",
+      "serviceId": "2_14",
+      "tripId": "2_12410",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "08:39",
+      "departure": "08:39",
+      "serviceId": "2_14",
+      "tripId": "2_142",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "08:39",
+      "departure": "08:39",
+      "serviceId": "2_14",
+      "tripId": "2_14255",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:44",
+      "departure": "08:44",
+      "serviceId": "2_14",
+      "tripId": "2_12415",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "08:46",
+      "departure": "08:46",
+      "serviceId": "2_14",
+      "tripId": "2_14260",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:47",
+      "departure": "08:47",
+      "serviceId": "2_14",
+      "tripId": "2_162",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "08:53",
+      "departure": "08:53",
+      "serviceId": "2_14",
+      "tripId": "2_12420",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "08:54",
+      "departure": "08:54",
+      "serviceId": "2_14",
+      "tripId": "2_14265",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "08:55",
+      "departure": "08:55",
+      "serviceId": "2_14",
+      "tripId": "2_642",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "08:56",
+      "departure": "08:56",
+      "serviceId": "2_14",
+      "tripId": "2_5716",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "09:01",
+      "departure": "09:01",
+      "serviceId": "2_14",
+      "tripId": "2_12425",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "09:01",
+      "departure": "09:01",
+      "serviceId": "2_14",
+      "tripId": "2_14295",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:03",
+      "departure": "09:03",
+      "serviceId": "2_14",
+      "tripId": "2_57",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "09:08",
+      "departure": "09:08",
+      "serviceId": "2_14",
+      "tripId": "2_14270",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:09",
+      "departure": "09:09",
+      "serviceId": "2_14",
+      "tripId": "2_12430",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "09:11",
+      "departure": "09:11",
+      "serviceId": "2_14",
+      "tripId": "2_767",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "09:14",
+      "departure": "09:14",
+      "serviceId": "2_14",
+      "tripId": "2_14275",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:16",
+      "departure": "09:16",
+      "serviceId": "2_14",
+      "tripId": "2_12435",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "09:16",
+      "departure": "09:16",
+      "serviceId": "2_14",
+      "tripId": "2_5721",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "09:18",
+      "departure": "09:18",
+      "serviceId": "2_14",
+      "tripId": "2_127",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "09:21",
+      "departure": "09:21",
+      "serviceId": "2_14",
+      "tripId": "2_14805",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:24",
+      "departure": "09:24",
+      "serviceId": "2_14",
+      "tripId": "2_12440",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "09:27",
+      "departure": "09:27",
+      "serviceId": "2_14",
+      "tripId": "2_157",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "09:30",
+      "departure": "09:30",
+      "serviceId": "2_14",
+      "tripId": "2_14860",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:32",
+      "departure": "09:32",
+      "serviceId": "2_14",
+      "tripId": "2_12445",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "09:36",
+      "departure": "09:36",
+      "serviceId": "2_14",
+      "tripId": "2_5726",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "09:37",
+      "departure": "09:37",
+      "serviceId": "2_14",
+      "tripId": "2_172",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "09:38",
+      "departure": "09:38",
+      "serviceId": "2_14",
+      "tripId": "2_14865",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:40",
+      "departure": "09:40",
+      "serviceId": "2_14",
+      "tripId": "2_12450",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "09:46",
+      "departure": "09:46",
+      "serviceId": "2_14",
+      "tripId": "2_14870",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:47",
+      "departure": "09:47",
+      "serviceId": "2_14",
+      "tripId": "2_167",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "09:49",
+      "departure": "09:49",
+      "serviceId": "2_14",
+      "tripId": "2_12455",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "09:54",
+      "departure": "09:54",
+      "serviceId": "2_14",
+      "tripId": "2_14875",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "09:56",
+      "departure": "09:56",
+      "serviceId": "2_14",
+      "tripId": "2_182",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "09:56",
+      "departure": "09:56",
+      "serviceId": "2_14",
+      "tripId": "2_5731",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "09:58",
+      "departure": "09:58",
+      "serviceId": "2_14",
+      "tripId": "2_12460",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:02",
+      "departure": "10:02",
+      "serviceId": "2_14",
+      "tripId": "2_14880",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:06",
+      "departure": "10:06",
+      "serviceId": "2_14",
+      "tripId": "2_12465",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:06",
+      "departure": "10:06",
+      "serviceId": "2_14",
+      "tripId": "2_177",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "10:10",
+      "departure": "10:10",
+      "serviceId": "2_14",
+      "tripId": "2_14885",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:15",
+      "departure": "10:15",
+      "serviceId": "2_14",
+      "tripId": "2_12470",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:16",
+      "departure": "10:16",
+      "serviceId": "2_14",
+      "tripId": "2_192",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "10:16",
+      "departure": "10:16",
+      "serviceId": "2_14",
+      "tripId": "2_5736",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "10:18",
+      "departure": "10:18",
+      "serviceId": "2_14",
+      "tripId": "2_14890",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:23",
+      "departure": "10:23",
+      "serviceId": "2_14",
+      "tripId": "2_12475",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:25",
+      "departure": "10:25",
+      "serviceId": "2_14",
+      "tripId": "2_14895",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:26",
+      "departure": "10:26",
+      "serviceId": "2_14",
+      "tripId": "2_187",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "10:30",
+      "departure": "10:30",
+      "serviceId": "2_14",
+      "tripId": "2_12480",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:33",
+      "departure": "10:33",
+      "serviceId": "2_14",
+      "tripId": "2_14900",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:36",
+      "departure": "10:36",
+      "serviceId": "2_14",
+      "tripId": "2_202",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "10:36",
+      "departure": "10:36",
+      "serviceId": "2_14",
+      "tripId": "2_5741",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "10:38",
+      "departure": "10:38",
+      "serviceId": "2_14",
+      "tripId": "2_12485",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:41",
+      "departure": "10:41",
+      "serviceId": "2_14",
+      "tripId": "2_14905",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:46",
+      "departure": "10:46",
+      "serviceId": "2_14",
+      "tripId": "2_12490",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:46",
+      "departure": "10:46",
+      "serviceId": "2_14",
+      "tripId": "2_197",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "10:49",
+      "departure": "10:49",
+      "serviceId": "2_14",
+      "tripId": "2_14910",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:54",
+      "departure": "10:54",
+      "serviceId": "2_14",
+      "tripId": "2_12495",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "10:56",
+      "departure": "10:56",
+      "serviceId": "2_14",
+      "tripId": "2_5746",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "10:57",
+      "departure": "10:57",
+      "serviceId": "2_14",
+      "tripId": "2_14915",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "10:57",
+      "departure": "10:57",
+      "serviceId": "2_14",
+      "tripId": "2_212",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "11:02",
+      "departure": "11:02",
+      "serviceId": "2_14",
+      "tripId": "2_12500",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "11:05",
+      "departure": "11:05",
+      "serviceId": "2_14",
+      "tripId": "2_14920",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "11:07",
+      "departure": "11:07",
+      "serviceId": "2_14",
+      "tripId": "2_207",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "11:10",
+      "departure": "11:10",
+      "serviceId": "2_14",
+      "tripId": "2_12505",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "11:13",
+      "departure": "11:13",
+      "serviceId": "2_14",
+      "tripId": "2_14925",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "11:16",
+      "departure": "11:16",
+      "serviceId": "2_14",
+      "tripId": "2_5751",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "11:17",
+      "departure": "11:17",
+      "serviceId": "2_14",
+      "tripId": "2_222",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "11:19",
+      "departure": "11:19",
+      "serviceId": "2_14",
+      "tripId": "2_12510",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "11:21",
+      "departure": "11:21",
+      "serviceId": "2_14",
+      "tripId": "2_14930",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "11:27",
+      "departure": "11:27",
+      "serviceId": "2_14",
+      "tripId": "2_12515",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "11:27",
+      "departure": "11:27",
+      "serviceId": "2_14",
+      "tripId": "2_217",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "11:29",
+      "departure": "11:29",
+      "serviceId": "2_14",
+      "tripId": "2_14935",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "11:35",
+      "departure": "11:35",
+      "serviceId": "2_14",
+      "tripId": "2_12520",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "11:36",
+      "departure": "11:36",
+      "serviceId": "2_14",
+      "tripId": "2_5756",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "11:37",
+      "departure": "11:37",
+      "serviceId": "2_14",
+      "tripId": "2_14940",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "11:37",
+      "departure": "11:37",
+      "serviceId": "2_14",
+      "tripId": "2_232",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "11:44",
+      "departure": "11:44",
+      "serviceId": "2_14",
+      "tripId": "2_12525",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "11:45",
+      "departure": "11:45",
+      "serviceId": "2_14",
+      "tripId": "2_14945",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "11:47",
+      "departure": "11:47",
+      "serviceId": "2_14",
+      "tripId": "2_227",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "11:52",
+      "departure": "11:52",
+      "serviceId": "2_14",
+      "tripId": "2_12530",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "11:53",
+      "departure": "11:53",
+      "serviceId": "2_14",
+      "tripId": "2_14950",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "11:56",
+      "departure": "11:56",
+      "serviceId": "2_14",
+      "tripId": "2_5761",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "11:57",
+      "departure": "11:57",
+      "serviceId": "2_14",
+      "tripId": "2_242",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "11:59",
+      "departure": "11:59",
+      "serviceId": "2_14",
+      "tripId": "2_12535",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "12:01",
+      "departure": "12:01",
+      "serviceId": "2_14",
+      "tripId": "2_14955",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:08",
+      "departure": "12:08",
+      "serviceId": "2_14",
+      "tripId": "2_12540",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "12:09",
+      "departure": "12:09",
+      "serviceId": "2_14",
+      "tripId": "2_237",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "12:10",
+      "departure": "12:10",
+      "serviceId": "2_14",
+      "tripId": "2_14960",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:16",
+      "departure": "12:16",
+      "serviceId": "2_14",
+      "tripId": "2_5901",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "12:17",
+      "departure": "12:17",
+      "serviceId": "2_14",
+      "tripId": "2_12545",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "12:18",
+      "departure": "12:18",
+      "serviceId": "2_14",
+      "tripId": "2_14965",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:19",
+      "departure": "12:19",
+      "serviceId": "2_14",
+      "tripId": "2_252",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "12:25",
+      "departure": "12:25",
+      "serviceId": "2_14",
+      "tripId": "2_12675",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "12:26",
+      "departure": "12:26",
+      "serviceId": "2_14",
+      "tripId": "2_14970",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:28",
+      "departure": "12:28",
+      "serviceId": "2_14",
+      "tripId": "2_247",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "12:33",
+      "departure": "12:33",
+      "serviceId": "2_14",
+      "tripId": "2_14975",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:34",
+      "departure": "12:34",
+      "serviceId": "2_14",
+      "tripId": "2_12680",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "12:35",
+      "departure": "12:35",
+      "serviceId": "2_14",
+      "tripId": "2_547",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "12:36",
+      "departure": "12:36",
+      "serviceId": "2_14",
+      "tripId": "2_5766",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "12:41",
+      "departure": "12:41",
+      "serviceId": "2_14",
+      "tripId": "2_14980",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:42",
+      "departure": "12:42",
+      "serviceId": "2_14",
+      "tripId": "2_12685",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "12:44",
+      "departure": "12:44",
+      "serviceId": "2_14",
+      "tripId": "2_542",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "12:49",
+      "departure": "12:49",
+      "serviceId": "2_14",
+      "tripId": "2_14985",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:50",
+      "departure": "12:50",
+      "serviceId": "2_14",
+      "tripId": "2_12690",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "12:53",
+      "departure": "12:53",
+      "serviceId": "2_14",
+      "tripId": "2_307",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "12:56",
+      "departure": "12:56",
+      "serviceId": "2_14",
+      "tripId": "2_14990",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "12:56",
+      "departure": "12:56",
+      "serviceId": "2_14",
+      "tripId": "2_5771",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "12:58",
+      "departure": "12:58",
+      "serviceId": "2_14",
+      "tripId": "2_12695",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:03",
+      "departure": "13:03",
+      "serviceId": "2_14",
+      "tripId": "2_7",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "13:04",
+      "departure": "13:04",
+      "serviceId": "2_14",
+      "tripId": "2_14995",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "13:07",
+      "departure": "13:07",
+      "serviceId": "2_14",
+      "tripId": "2_12700",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:12",
+      "departure": "13:12",
+      "serviceId": "2_14",
+      "tripId": "2_15000",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "13:14",
+      "departure": "13:14",
+      "serviceId": "2_14",
+      "tripId": "2_552",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "13:15",
+      "departure": "13:15",
+      "serviceId": "2_14",
+      "tripId": "2_12705",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:16",
+      "departure": "13:16",
+      "serviceId": "2_14",
+      "tripId": "2_5776",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "13:20",
+      "departure": "13:20",
+      "serviceId": "2_14",
+      "tripId": "2_15005",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "13:23",
+      "departure": "13:23",
+      "serviceId": "2_14",
+      "tripId": "2_12710",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:25",
+      "departure": "13:25",
+      "serviceId": "2_14",
+      "tripId": "2_2",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "13:28",
+      "departure": "13:28",
+      "serviceId": "2_14",
+      "tripId": "2_15010",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "13:31",
+      "departure": "13:31",
+      "serviceId": "2_14",
+      "tripId": "2_12715",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:36",
+      "departure": "13:36",
+      "serviceId": "2_14",
+      "tripId": "2_15015",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "13:36",
+      "departure": "13:36",
+      "serviceId": "2_14",
+      "tripId": "2_5781",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "13:37",
+      "departure": "13:37",
+      "serviceId": "2_14",
+      "tripId": "2_567",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "13:39",
+      "departure": "13:39",
+      "serviceId": "2_14",
+      "tripId": "2_12720",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:45",
+      "departure": "13:45",
+      "serviceId": "2_14",
+      "tripId": "2_15020",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "13:47",
+      "departure": "13:47",
+      "serviceId": "2_14",
+      "tripId": "2_52",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "13:48",
+      "departure": "13:48",
+      "serviceId": "2_14",
+      "tripId": "2_12725",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:53",
+      "departure": "13:53",
+      "serviceId": "2_14",
+      "tripId": "2_15025",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "13:55",
+      "departure": "13:55",
+      "serviceId": "2_14",
+      "tripId": "2_12730",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "13:56",
+      "departure": "13:56",
+      "serviceId": "2_14",
+      "tripId": "2_5786",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "13:57",
+      "departure": "13:57",
+      "serviceId": "2_14",
+      "tripId": "2_27",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "14:01",
+      "departure": "14:01",
+      "serviceId": "2_14",
+      "tripId": "2_15030",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:02",
+      "departure": "14:02",
+      "serviceId": "2_14",
+      "tripId": "2_12735",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:07",
+      "departure": "14:07",
+      "serviceId": "2_14",
+      "tripId": "2_787",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "14:08",
+      "departure": "14:08",
+      "serviceId": "2_14",
+      "tripId": "2_12740",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:09",
+      "departure": "14:09",
+      "serviceId": "2_14",
+      "tripId": "2_15035",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:16",
+      "departure": "14:16",
+      "serviceId": "2_14",
+      "tripId": "2_12745",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:16",
+      "departure": "14:16",
+      "serviceId": "2_14",
+      "tripId": "2_5791",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "14:17",
+      "departure": "14:17",
+      "serviceId": "2_14",
+      "tripId": "2_15040",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:17",
+      "departure": "14:17",
+      "serviceId": "2_14",
+      "tripId": "2_562",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "14:23",
+      "departure": "14:23",
+      "serviceId": "2_14",
+      "tripId": "2_12875",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:24",
+      "departure": "14:24",
+      "serviceId": "2_14",
+      "tripId": "2_14855",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:26",
+      "departure": "14:26",
+      "serviceId": "2_14",
+      "tripId": "2_37",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "14:31",
+      "departure": "14:31",
+      "serviceId": "2_14",
+      "tripId": "2_12880",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:33",
+      "departure": "14:33",
+      "serviceId": "2_14",
+      "tripId": "2_14825",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:36",
+      "departure": "14:36",
+      "serviceId": "2_14",
+      "tripId": "2_5796",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "14:36",
+      "departure": "14:36",
+      "serviceId": "2_14",
+      "tripId": "2_772",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "14:39",
+      "departure": "14:39",
+      "serviceId": "2_14",
+      "tripId": "2_12885",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:41",
+      "departure": "14:41",
+      "serviceId": "2_14",
+      "tripId": "2_14845",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:46",
+      "departure": "14:46",
+      "serviceId": "2_14",
+      "tripId": "2_797",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "14:47",
+      "departure": "14:47",
+      "serviceId": "2_14",
+      "tripId": "2_12890",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:49",
+      "departure": "14:49",
+      "serviceId": "2_14",
+      "tripId": "2_14840",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:55",
+      "departure": "14:55",
+      "serviceId": "2_14",
+      "tripId": "2_12",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "14:55",
+      "departure": "14:55",
+      "serviceId": "2_14",
+      "tripId": "2_12895",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "14:56",
+      "departure": "14:56",
+      "serviceId": "2_14",
+      "tripId": "2_14835",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "14:56",
+      "departure": "14:56",
+      "serviceId": "2_14",
+      "tripId": "2_5801",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "15:03",
+      "departure": "15:03",
+      "serviceId": "2_14",
+      "tripId": "2_12900",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "15:04",
+      "departure": "15:04",
+      "serviceId": "2_14",
+      "tripId": "2_14830",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "15:05",
+      "departure": "15:05",
+      "serviceId": "2_14",
+      "tripId": "2_607",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "15:11",
+      "departure": "15:11",
+      "serviceId": "2_14",
+      "tripId": "2_12905",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "15:12",
+      "departure": "15:12",
+      "serviceId": "2_14",
+      "tripId": "2_15045",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "15:15",
+      "departure": "15:15",
+      "serviceId": "2_14",
+      "tripId": "2_707",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "15:16",
+      "departure": "15:16",
+      "serviceId": "2_14",
+      "tripId": "2_5806",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "15:19",
+      "departure": "15:19",
+      "serviceId": "2_14",
+      "tripId": "2_12910",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "15:20",
+      "departure": "15:20",
+      "serviceId": "2_14",
+      "tripId": "2_15050",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "15:25",
+      "departure": "15:25",
+      "serviceId": "2_14",
+      "tripId": "2_632",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "15:28",
+      "departure": "15:28",
+      "serviceId": "2_14",
+      "tripId": "2_12915",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "15:28",
+      "departure": "15:28",
+      "serviceId": "2_14",
+      "tripId": "2_15055",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "15:35",
+      "departure": "15:35",
+      "serviceId": "2_14",
+      "tripId": "2_67",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "15:36",
+      "departure": "15:36",
+      "serviceId": "2_14",
+      "tripId": "2_12920",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "15:36",
+      "departure": "15:36",
+      "serviceId": "2_14",
+      "tripId": "2_15060",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "15:36",
+      "departure": "15:36",
+      "serviceId": "2_14",
+      "tripId": "2_5811",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "15:43",
+      "departure": "15:43",
+      "serviceId": "2_14",
+      "tripId": "2_12925",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "15:44",
+      "departure": "15:44",
+      "serviceId": "2_14",
+      "tripId": "2_15065",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "15:46",
+      "departure": "15:46",
+      "serviceId": "2_14",
+      "tripId": "2_777",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "15:51",
+      "departure": "15:51",
+      "serviceId": "2_14",
+      "tripId": "2_12930",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "15:53",
+      "departure": "15:53",
+      "serviceId": "2_14",
+      "tripId": "2_14850",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "15:56",
+      "departure": "15:56",
+      "serviceId": "2_14",
+      "tripId": "2_5816",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "15:57",
+      "departure": "15:57",
+      "serviceId": "2_14",
+      "tripId": "2_97",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "15:58",
+      "departure": "15:58",
+      "serviceId": "2_14",
+      "tripId": "2_13370",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:01",
+      "departure": "16:01",
+      "serviceId": "2_14",
+      "tripId": "2_14795",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:04",
+      "departure": "16:04",
+      "serviceId": "2_14",
+      "tripId": "2_112",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "16:05",
+      "departure": "16:05",
+      "serviceId": "2_14",
+      "tripId": "2_12935",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:08",
+      "departure": "16:08",
+      "serviceId": "2_14",
+      "tripId": "2_14560",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:11",
+      "departure": "16:11",
+      "serviceId": "2_14",
+      "tripId": "2_737",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "16:12",
+      "departure": "16:12",
+      "serviceId": "2_14",
+      "tripId": "2_12940",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:16",
+      "departure": "16:16",
+      "serviceId": "2_14",
+      "tripId": "2_14565",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:16",
+      "departure": "16:16",
+      "serviceId": "2_14",
+      "tripId": "2_5821",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "16:19",
+      "departure": "16:19",
+      "serviceId": "2_14",
+      "tripId": "2_12950",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:20",
+      "departure": "16:20",
+      "serviceId": "2_14",
+      "tripId": "2_582",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "16:24",
+      "departure": "16:24",
+      "serviceId": "2_14",
+      "tripId": "2_14570",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:26",
+      "departure": "16:26",
+      "serviceId": "2_14",
+      "tripId": "2_12955",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:29",
+      "departure": "16:29",
+      "serviceId": "2_14",
+      "tripId": "2_47",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "16:32",
+      "departure": "16:32",
+      "serviceId": "2_14",
+      "tripId": "2_14575",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:33",
+      "departure": "16:33",
+      "serviceId": "2_14",
+      "tripId": "2_12960",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:36",
+      "departure": "16:36",
+      "serviceId": "2_14",
+      "tripId": "2_5826",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "16:38",
+      "departure": "16:38",
+      "serviceId": "2_14",
+      "tripId": "2_107",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "16:38",
+      "departure": "16:38",
+      "serviceId": "2_14",
+      "tripId": "2_14580",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:40",
+      "departure": "16:40",
+      "serviceId": "2_14",
+      "tripId": "2_12965",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:45",
+      "departure": "16:45",
+      "serviceId": "2_14",
+      "tripId": "2_14585",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:47",
+      "departure": "16:47",
+      "serviceId": "2_14",
+      "tripId": "2_362",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "16:48",
+      "departure": "16:48",
+      "serviceId": "2_14",
+      "tripId": "2_12970",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:53",
+      "departure": "16:53",
+      "serviceId": "2_14",
+      "tripId": "2_14590",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "16:54",
+      "departure": "16:54",
+      "serviceId": "2_14",
+      "tripId": "2_12975",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "16:56",
+      "departure": "16:56",
+      "serviceId": "2_14",
+      "tripId": "2_5831",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "16:56",
+      "departure": "16:56",
+      "serviceId": "2_14",
+      "tripId": "2_667",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "16:59",
+      "departure": "16:59",
+      "serviceId": "2_14",
+      "tripId": "2_12980",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:00",
+      "departure": "17:00",
+      "serviceId": "2_14",
+      "tripId": "2_14595",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:05",
+      "departure": "17:05",
+      "serviceId": "2_14",
+      "tripId": "2_662",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "17:06",
+      "departure": "17:06",
+      "serviceId": "2_14",
+      "tripId": "2_12985",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:07",
+      "departure": "17:07",
+      "serviceId": "2_14",
+      "tripId": "2_14600",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:12",
+      "departure": "17:12",
+      "serviceId": "2_14",
+      "tripId": "2_657",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "17:14",
+      "departure": "17:14",
+      "serviceId": "2_14",
+      "tripId": "2_12990",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:15",
+      "departure": "17:15",
+      "serviceId": "2_14",
+      "tripId": "2_14810",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:16",
+      "departure": "17:16",
+      "serviceId": "2_14",
+      "tripId": "2_5836",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "17:20",
+      "departure": "17:20",
+      "serviceId": "2_14",
+      "tripId": "2_647",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "17:22",
+      "departure": "17:22",
+      "serviceId": "2_14",
+      "tripId": "2_12995",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:23",
+      "departure": "17:23",
+      "serviceId": "2_14",
+      "tripId": "2_14605",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:28",
+      "departure": "17:28",
+      "serviceId": "2_14",
+      "tripId": "2_297",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "17:30",
+      "departure": "17:30",
+      "serviceId": "2_14",
+      "tripId": "2_13080",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:30",
+      "departure": "17:30",
+      "serviceId": "2_14",
+      "tripId": "2_14610",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:36",
+      "departure": "17:36",
+      "serviceId": "2_14",
+      "tripId": "2_14615",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:36",
+      "departure": "17:36",
+      "serviceId": "2_14",
+      "tripId": "2_5841",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "17:36",
+      "departure": "17:36",
+      "serviceId": "2_14",
+      "tripId": "2_857",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "17:38",
+      "departure": "17:38",
+      "serviceId": "2_14",
+      "tripId": "2_13085",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:43",
+      "departure": "17:43",
+      "serviceId": "2_14",
+      "tripId": "2_14620",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:44",
+      "departure": "17:44",
+      "serviceId": "2_14",
+      "tripId": "2_862",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "17:45",
+      "departure": "17:45",
+      "serviceId": "2_14",
+      "tripId": "2_13090",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:48",
+      "departure": "17:48",
+      "serviceId": "2_14",
+      "tripId": "2_14625",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:49",
+      "departure": "17:49",
+      "serviceId": "2_14",
+      "tripId": "2_13095",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "17:52",
+      "departure": "17:52",
+      "serviceId": "2_14",
+      "tripId": "2_342",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "17:56",
+      "departure": "17:56",
+      "serviceId": "2_14",
+      "tripId": "2_14630",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "17:56",
+      "departure": "17:56",
+      "serviceId": "2_14",
+      "tripId": "2_5846",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "17:57",
+      "departure": "17:57",
+      "serviceId": "2_14",
+      "tripId": "2_13100",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:02",
+      "departure": "18:02",
+      "serviceId": "2_14",
+      "tripId": "2_347",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "18:04",
+      "departure": "18:04",
+      "serviceId": "2_14",
+      "tripId": "2_13105",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:04",
+      "departure": "18:04",
+      "serviceId": "2_14",
+      "tripId": "2_14660",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "18:11",
+      "departure": "18:11",
+      "serviceId": "2_14",
+      "tripId": "2_13110",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:11",
+      "departure": "18:11",
+      "serviceId": "2_14",
+      "tripId": "2_352",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "18:12",
+      "departure": "18:12",
+      "serviceId": "2_14",
+      "tripId": "2_14635",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "18:16",
+      "departure": "18:16",
+      "serviceId": "2_14",
+      "tripId": "2_5851",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "18:18",
+      "departure": "18:18",
+      "serviceId": "2_14",
+      "tripId": "2_13115",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:19",
+      "departure": "18:19",
+      "serviceId": "2_14",
+      "tripId": "2_357",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "18:20",
+      "departure": "18:20",
+      "serviceId": "2_14",
+      "tripId": "2_14640",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "18:25",
+      "departure": "18:25",
+      "serviceId": "2_14",
+      "tripId": "2_13120",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:27",
+      "departure": "18:27",
+      "serviceId": "2_14",
+      "tripId": "2_812",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "18:28",
+      "departure": "18:28",
+      "serviceId": "2_14",
+      "tripId": "2_14645",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "18:32",
+      "departure": "18:32",
+      "serviceId": "2_14",
+      "tripId": "2_13125",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:36",
+      "departure": "18:36",
+      "serviceId": "2_14",
+      "tripId": "2_14785",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "18:36",
+      "departure": "18:36",
+      "serviceId": "2_14",
+      "tripId": "2_5856",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "18:36",
+      "departure": "18:36",
+      "serviceId": "2_14",
+      "tripId": "2_817",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "18:39",
+      "departure": "18:39",
+      "serviceId": "2_14",
+      "tripId": "2_13130",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:44",
+      "departure": "18:44",
+      "serviceId": "2_14",
+      "tripId": "2_822",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "18:45",
+      "departure": "18:45",
+      "serviceId": "2_14",
+      "tripId": "2_13135",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:45",
+      "departure": "18:45",
+      "serviceId": "2_14",
+      "tripId": "2_14650",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "18:52",
+      "departure": "18:52",
+      "serviceId": "2_14",
+      "tripId": "2_827",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "18:53",
+      "departure": "18:53",
+      "serviceId": "2_14",
+      "tripId": "2_13140",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "18:54",
+      "departure": "18:54",
+      "serviceId": "2_14",
+      "tripId": "2_14655",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "18:56",
+      "departure": "18:56",
+      "serviceId": "2_14",
+      "tripId": "2_5861",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "19:00",
+      "departure": "19:00",
+      "serviceId": "2_14",
+      "tripId": "2_13380",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "19:00",
+      "departure": "19:00",
+      "serviceId": "2_14",
+      "tripId": "2_832",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "19:02",
+      "departure": "19:02",
+      "serviceId": "2_14",
+      "tripId": "2_14315",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "19:08",
+      "departure": "19:08",
+      "serviceId": "2_14",
+      "tripId": "2_13145",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "19:08",
+      "departure": "19:08",
+      "serviceId": "2_14",
+      "tripId": "2_957",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "19:10",
+      "departure": "19:10",
+      "serviceId": "2_14",
+      "tripId": "2_14320",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "19:15",
+      "departure": "19:15",
+      "serviceId": "2_14",
+      "tripId": "2_13150",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "19:16",
+      "departure": "19:16",
+      "serviceId": "2_14",
+      "tripId": "2_5866",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "19:16",
+      "departure": "19:16",
+      "serviceId": "2_14",
+      "tripId": "2_837",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "19:19",
+      "departure": "19:19",
+      "serviceId": "2_14",
+      "tripId": "2_14325",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "19:22",
+      "departure": "19:22",
+      "serviceId": "2_14",
+      "tripId": "2_13390",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "19:26",
+      "departure": "19:26",
+      "serviceId": "2_14",
+      "tripId": "2_367",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "19:28",
+      "departure": "19:28",
+      "serviceId": "2_14",
+      "tripId": "2_13155",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "19:29",
+      "departure": "19:29",
+      "serviceId": "2_14",
+      "tripId": "2_14330",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "19:34",
+      "departure": "19:34",
+      "serviceId": "2_14",
+      "tripId": "2_13160",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "19:36",
+      "departure": "19:36",
+      "serviceId": "2_14",
+      "tripId": "2_372",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "19:36",
+      "departure": "19:36",
+      "serviceId": "2_14",
+      "tripId": "2_5871",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "19:39",
+      "departure": "19:39",
+      "serviceId": "2_14",
+      "tripId": "2_14335",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "19:45",
+      "departure": "19:45",
+      "serviceId": "2_14",
+      "tripId": "2_13165",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "19:49",
+      "departure": "19:49",
+      "serviceId": "2_14",
+      "tripId": "2_14340",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "19:49",
+      "departure": "19:49",
+      "serviceId": "2_14",
+      "tripId": "2_377",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "19:56",
+      "departure": "19:56",
+      "serviceId": "2_14",
+      "tripId": "2_5876",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "19:58",
+      "departure": "19:58",
+      "serviceId": "2_14",
+      "tripId": "2_13170",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "20:00",
+      "departure": "20:00",
+      "serviceId": "2_14",
+      "tripId": "2_14345",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "20:02",
+      "departure": "20:02",
+      "serviceId": "2_14",
+      "tripId": "2_382",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "20:10",
+      "departure": "20:10",
+      "serviceId": "2_14",
+      "tripId": "2_13175",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "20:10",
+      "departure": "20:10",
+      "serviceId": "2_14",
+      "tripId": "2_14350",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "20:14",
+      "departure": "20:14",
+      "serviceId": "2_14",
+      "tripId": "2_387",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "20:20",
+      "departure": "20:20",
+      "serviceId": "2_14",
+      "tripId": "2_14355",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "20:21",
+      "departure": "20:21",
+      "serviceId": "2_14",
+      "tripId": "2_13180",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "20:21",
+      "departure": "20:21",
+      "serviceId": "2_14",
+      "tripId": "2_5881",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "20:26",
+      "departure": "20:26",
+      "serviceId": "2_14",
+      "tripId": "2_392",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "20:34",
+      "departure": "20:34",
+      "serviceId": "2_14",
+      "tripId": "2_14545",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "20:41",
+      "departure": "20:41",
+      "serviceId": "2_14",
+      "tripId": "2_13265",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "20:41",
+      "departure": "20:41",
+      "serviceId": "2_14",
+      "tripId": "2_902",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "20:51",
+      "departure": "20:51",
+      "serviceId": "2_14",
+      "tripId": "2_14550",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "20:51",
+      "departure": "20:51",
+      "serviceId": "2_14",
+      "tripId": "2_5886",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Centre"
+    },
+    {
+      "arrival": "21:06",
+      "departure": "21:06",
+      "serviceId": "2_14",
+      "tripId": "2_13290",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "21:11",
+      "departure": "21:11",
+      "serviceId": "2_14",
+      "tripId": "2_14440",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "21:11",
+      "departure": "21:11",
+      "serviceId": "2_14",
+      "tripId": "2_937",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "21:31",
+      "departure": "21:31",
+      "serviceId": "2_14",
+      "tripId": "2_14495",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "21:31",
+      "departure": "21:31",
+      "serviceId": "2_10",
+      "tripId": "2_20509",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Lavoisier"
+    },
+    {
+      "arrival": "21:32",
+      "departure": "21:32",
+      "serviceId": "2_14",
+      "tripId": "2_13295",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "21:51",
+      "departure": "21:51",
+      "serviceId": "2_14",
+      "tripId": "2_14500",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "21:51",
+      "departure": "21:51",
+      "serviceId": "2_14",
+      "tripId": "2_907",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "21:56",
+      "departure": "21:56",
+      "serviceId": "2_14",
+      "tripId": "2_13300",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "22:11",
+      "departure": "22:11",
+      "serviceId": "2_14",
+      "tripId": "2_14505",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "22:21",
+      "departure": "22:21",
+      "serviceId": "2_14",
+      "tripId": "2_13305",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "22:26",
+      "departure": "22:26",
+      "serviceId": "2_14",
+      "tripId": "2_952",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "22:31",
+      "departure": "22:31",
+      "serviceId": "2_14",
+      "tripId": "2_14510",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "22:46",
+      "departure": "22:46",
+      "serviceId": "2_14",
+      "tripId": "2_13310",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "22:51",
+      "departure": "22:51",
+      "serviceId": "2_14",
+      "tripId": "2_14515",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "22:56",
+      "departure": "22:56",
+      "serviceId": "2_14",
+      "tripId": "2_882",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "23:01",
+      "departure": "23:01",
+      "serviceId": "2_10",
+      "tripId": "2_20499",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Lavoisier"
+    },
+    {
+      "arrival": "23:11",
+      "departure": "23:11",
+      "serviceId": "2_14",
+      "tripId": "2_13315",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "23:11",
+      "departure": "23:11",
+      "serviceId": "2_14",
+      "tripId": "2_14520",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "23:31",
+      "departure": "23:31",
+      "serviceId": "2_14",
+      "tripId": "2_14525",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "23:36",
+      "departure": "23:36",
+      "serviceId": "2_14",
+      "tripId": "2_13320",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "23:36",
+      "departure": "23:36",
+      "serviceId": "2_14",
+      "tripId": "2_897",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    },
+    {
+      "arrival": "23:51",
+      "departure": "23:51",
+      "serviceId": "2_14",
+      "tripId": "2_14530",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "00:01",
+      "departure": "00:01",
+      "serviceId": "2_14",
+      "tripId": "2_13325",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "00:11",
+      "departure": "00:11",
+      "serviceId": "2_14",
+      "tripId": "2_14535",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "00:36",
+      "departure": "00:36",
+      "serviceId": "2_14",
+      "tripId": "2_13330",
+      "routeId": "2_0005",
+      "headsign": "5 | Lycée Bréquigny"
+    },
+    {
+      "arrival": "00:36",
+      "departure": "00:36",
+      "serviceId": "2_14",
+      "tripId": "2_14540",
+      "routeId": "2_0009",
+      "headsign": "9 | Cleunay"
+    },
+    {
+      "arrival": "00:36",
+      "departure": "00:36",
+      "serviceId": "2_11",
+      "tripId": "2_20520",
+      "routeId": "2_0057",
+      "headsign": "57 | Bruz Lavoisier"
+    },
+    {
+      "arrival": "00:36",
+      "departure": "00:36",
+      "serviceId": "2_14",
+      "tripId": "2_872",
+      "routeId": "2_0001",
+      "headsign": "1 | Chantepie Rosa Parks"
+    }
+  ]
+}

@@ -112,7 +112,6 @@ public class JsonItineRennesApiClientTest {
      *             The date is not in a valid format
      */
     @Test
-    @Ignore
     public final void testGetScheduleForStop() throws IOException, ParseException {
 
         final Calendar calendar = Calendar.getInstance();
@@ -131,11 +130,11 @@ public class JsonItineRennesApiClientTest {
 
         int cpt = 0;
         for (final ScheduleStopTime stopTime : schedule.getStopTimes()) {
-            if (stopTime.getRoute().getShortName().equals("53")) {
+            if (stopTime.getRoute().getShortName().equals("5")) {
                 cpt++;
             }
         }
-        assertEquals("87 stop times should be returned by the api for line 53", 87, cpt);
+        assertEquals("116 stop times should be returned by the api for line 5", 116, cpt);
     }
 
 }
