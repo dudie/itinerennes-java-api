@@ -26,6 +26,7 @@ import java.lang.reflect.Type;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
@@ -37,36 +38,32 @@ import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 
-import fr.itinerennes.api.client.model.Time;
-
 /**
  * @author Jeremie Huchet
  */
-public class TimeTypeAdapter implements JsonSerializer<Time>, JsonDeserializer<Time> {
-
-    private static final String TIME_FORMAT = "HH:mm";
+public class DateTypeAdapter implements JsonSerializer<Date>, JsonDeserializer<Date> {
 
     private final DateFormat dateFormatter;
 
-    public TimeTypeAdapter(final String timezone, final Locale locale) {
+    public DateTypeAdapter(final String dateFormat, final String timezone, final Locale locale) {
 
-        dateFormatter = new SimpleDateFormat(TIME_FORMAT, locale);
+        dateFormatter = new SimpleDateFormat(dateFormat, locale);
         dateFormatter.setTimeZone(TimeZone.getTimeZone(timezone));
     }
 
     @Override
-    public Time deserialize(final JsonElement json, final Type typeOfT, final JsonDeserializationContext context) throws JsonParseException {
+    public Date deserialize(final JsonElement json, final Type typeOfT, final JsonDeserializationContext context) throws JsonParseException {
         final String value = json.getAsString();
         try {
-            return new Time(dateFormatter.parse(value).getTime());
+            return dateFormatter.parse(value);
         } catch (final ParseException e) {
-            final String msg = String.format("Can't parse time value %s", value);
+            final String msg = String.format("Can't parse date value %s", value);
             throw new JsonParseException(msg, e);
         }
     }
 
     @Override
-    public JsonElement serialize(final Time src, final Type typeOfSrc, final JsonSerializationContext context) {
+    public JsonElement serialize(final Date src, final Type typeOfSrc, final JsonSerializationContext context) {
 
         return new JsonPrimitive(dateFormatter.format(src));
     }
