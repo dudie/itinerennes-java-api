@@ -68,7 +68,7 @@ public final class StopScheduleHttpResponseHandler extends ApiHttpResponseHandle
             
             // rebase arrival time
             hoursHolder.setTime(stopTime.getArrivalTime());
-            for (final int field : new int [] {Calendar.HOUR, Calendar.MINUTE}) {
+            for (final int field : new int [] {Calendar.HOUR_OF_DAY, Calendar.MINUTE}) {
                 rebase.set(field, hoursHolder.get(field));
             }
             stopTime.setArrivalTime(new Time(rebase.getTime().getTime()));
