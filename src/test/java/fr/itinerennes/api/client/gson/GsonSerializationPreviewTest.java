@@ -24,6 +24,7 @@ package fr.itinerennes.api.client.gson;
 
 import static java.lang.String.format;
 
+import java.sql.Time;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -34,12 +35,10 @@ import org.junit.Test;
 
 import com.google.gson.Gson;
 
-import fr.itinerennes.api.client.gson.ItineRennesApiGsonFactory;
 import fr.itinerennes.api.client.model.Route;
 import fr.itinerennes.api.client.model.ScheduleStopTime;
 import fr.itinerennes.api.client.model.Stop;
 import fr.itinerennes.api.client.model.StopSchedule;
-import fr.itinerennes.api.client.model.Time;
 import fr.itinerennes.api.client.model.TripSchedule;
 import fr.itinerennes.api.client.model.TripStopTime;
 
@@ -100,9 +99,9 @@ public class GsonSerializationPreviewTest {
             cal.setTime(date);
             tst = new TripStopTime();
             cal.add(Calendar.HOUR, h);
-            tst.setArrivalTime(new Time(cal.getTimeInMillis()));
+            tst.setArrivalTime((int) (cal.getTimeInMillis() / 1000));
             cal.add(Calendar.MINUTE, m);
-            tst.setDepartureTime(new Time(cal.getTimeInMillis()));
+            tst.setDepartureTime((int) (cal.getTimeInMillis() / 1000));
             tst.setStop(getStop(stopId));
             tst.setStopHeadsign(format("%s headsign", routeId));
             TRIP_STOP_TIMES.put(key, tst);

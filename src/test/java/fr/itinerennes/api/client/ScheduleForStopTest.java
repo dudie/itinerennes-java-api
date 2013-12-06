@@ -1,7 +1,6 @@
 package fr.itinerennes.api.client;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -21,8 +20,6 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import fr.itinerennes.api.client.model.ScheduleStopTime;
 import fr.itinerennes.api.client.model.StopSchedule;
@@ -110,7 +107,6 @@ public class ScheduleForStopTest {
     }
 
     @Test
-    @Ignore
     public void verifyLastStopTime() {
         final String expected = "2013-11-05 00:36";
 

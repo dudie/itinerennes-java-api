@@ -32,16 +32,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.Expose;
 
-import fr.itinerennes.api.client.model.Time;
-
 /**
  * @author Jeremie Huchet
  */
 public class ItineRennesApiGsonFactory {
 
     private static final String DATE_FORMAT = "yyyy-MM-dd HH:mm";
-
-    private static final String TIMEZONE = "Europe/Paris";
 
     public static Gson newInstance() {
         return newInstance(false);
@@ -50,8 +46,7 @@ public class ItineRennesApiGsonFactory {
     public static Gson newInstance(final boolean prettyJson) {
         final GsonBuilder gb = new GsonBuilder();
         gb.addSerializationExclusionStrategy(new ExcludeAnnotationStrategy());
-        gb.registerTypeAdapter(Date.class, new DateTypeAdapter(DATE_FORMAT, TIMEZONE, Locale.FRANCE));
-        gb.registerTypeAdapter(Time.class, new TimeTypeAdapter(TIMEZONE, Locale.FRANCE));
+        gb.registerTypeAdapter(Date.class, new DateTypeAdapter(DATE_FORMAT));
         gb.registerTypeAdapter(Locale.class, new LocaleTypeAdapter());
         gb.registerTypeAdapter(TimeZone.class, new TimeZoneTypeAdapter());
         if (prettyJson) {

@@ -22,6 +22,8 @@ package fr.itinerennes.api.client.model;
  * [/license]
  */
 
+import java.util.Date;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -32,11 +34,11 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
 
     /** Arrival time. */
     @SerializedName("arrival")
-    private Time arrivalTime;
+    private Date arrivalTime;
 
     /** Departure time. */
     @SerializedName("departure")
-    private Time departureTime;
+    private Date departureTime;
 
     /** Service id. */
     private String serviceId;
@@ -58,7 +60,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * 
      * @return the arrivalTime
      */
-    public Time getArrivalTime() {
+    public Date getArrivalTime() {
 
         return arrivalTime;
     }
@@ -69,7 +71,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * @param arrivalTime
      *            the arrivalTime to set
      */
-    public void setArrivalTime(final Time arrivalTime) {
+    public void setArrivalTime(final Date arrivalTime) {
 
         this.arrivalTime = arrivalTime;
     }
@@ -79,7 +81,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * 
      * @return the departureTime
      */
-    public Time getDepartureTime() {
+    public Date getDepartureTime() {
 
         return departureTime;
     }
@@ -90,7 +92,7 @@ public class ScheduleStopTime implements Comparable<ScheduleStopTime> {
      * @param departureTime
      *            the departureTime to set
      */
-    public void setDepartureTime(final Time departureTime) {
+    public void setDepartureTime(final Date departureTime) {
 
         this.departureTime = departureTime;
     }

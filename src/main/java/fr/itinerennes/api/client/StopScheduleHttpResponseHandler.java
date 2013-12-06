@@ -23,7 +23,6 @@ package fr.itinerennes.api.client;
  */
 
 import java.io.IOException;
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,7 +33,6 @@ import com.google.gson.Gson;
 import fr.itinerennes.api.client.model.Route;
 import fr.itinerennes.api.client.model.ScheduleStopTime;
 import fr.itinerennes.api.client.model.StopSchedule;
-import fr.itinerennes.api.client.model.Time;
 
 /**
  * @author Jeremie Huchet
@@ -57,27 +55,10 @@ public final class StopScheduleHttpResponseHandler extends ApiHttpResponseHandle
         for (final Route route : stopSchedule.getRoutes()) {
             routes.put(route.getId(), route);
         }
-        
-        final Calendar rebase = Calendar.getInstance();
-        rebase.setTime(stopSchedule.getDate());
-        final Calendar hoursHolder = Calendar.getInstance();
-        
+
         for (final ScheduleStopTime stopTime : stopSchedule.getStopTimes()) {
             // inject route
             stopTime.setRoute(routes.get(stopTime.getRouteId()));
-            
-            // rebase arrival time
-            hoursHolder.setTime(stopTime.getArrivalTime());
-            for (final int field : new int [] {Calendar.HOUR_OF_DAY, Calendar.MINUTE}) {
-                rebase.set(field, hoursHolder.get(field));
-            }
-            stopTime.setArrivalTime(new Time(rebase.getTime().getTime()));
-            // rebase departure time
-            hoursHolder.setTime(stopTime.getDepartureTime());
-            for (final int field : new int [] {Calendar.HOUR, Calendar.MINUTE}) {
-                rebase.set(field, hoursHolder.get(field));
-            }
-            stopTime.setDepartureTime(new Time(rebase.getTime().getTime()));
         }
         return stopSchedule;
     }

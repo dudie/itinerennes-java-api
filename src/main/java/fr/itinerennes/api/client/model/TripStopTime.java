@@ -34,13 +34,13 @@ public class TripStopTime {
     /** Stop. */
     private Stop stop;
 
-    /** Arrival time. */
+    /** Arrival time (seconds since midnight). */
     @SerializedName("arrival")
-    private Time arrivalTime;
+    private int arrivalTime;
 
-    /** Departure time. */
+    /** Departure time (seconds since midnight). */
     @SerializedName("departure")
-    private Time departureTime;
+    private int departureTime;
 
     /** Stop headsign. */
     private String stopHeadsign;
@@ -71,7 +71,7 @@ public class TripStopTime {
      * 
      * @return the arrivalTime
      */
-    public Time getArrivalTime() {
+    public int getArrivalTime() {
 
         return arrivalTime;
     }
@@ -82,7 +82,7 @@ public class TripStopTime {
      * @param arrivalTime
      *            the arrivalTime to set
      */
-    public void setArrivalTime(final Time arrivalTime) {
+    public void setArrivalTime(final int arrivalTime) {
 
         this.arrivalTime = arrivalTime;
     }
@@ -92,7 +92,7 @@ public class TripStopTime {
      * 
      * @return the departureTime
      */
-    public Time getDepartureTime() {
+    public int getDepartureTime() {
 
         return departureTime;
     }
@@ -103,7 +103,7 @@ public class TripStopTime {
      * @param departureTime
      *            the departureTime to set
      */
-    public void setDepartureTime(final Time departureTime) {
+    public void setDepartureTime(final int departureTime) {
 
         this.departureTime = departureTime;
     }

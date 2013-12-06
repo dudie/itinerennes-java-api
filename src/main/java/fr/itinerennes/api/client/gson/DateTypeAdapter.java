@@ -27,8 +27,6 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
-import java.util.TimeZone;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -45,10 +43,8 @@ public class DateTypeAdapter implements JsonSerializer<Date>, JsonDeserializer<D
 
     private final DateFormat dateFormatter;
 
-    public DateTypeAdapter(final String dateFormat, final String timezone, final Locale locale) {
-
-        dateFormatter = new SimpleDateFormat(dateFormat, locale);
-        dateFormatter.setTimeZone(TimeZone.getTimeZone(timezone));
+    public DateTypeAdapter(final String dateFormat) {
+        dateFormatter = new SimpleDateFormat(dateFormat);
     }
 
     @Override
