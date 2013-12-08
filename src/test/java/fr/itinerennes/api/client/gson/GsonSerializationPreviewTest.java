@@ -28,13 +28,17 @@ import java.sql.Time;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
+import java.util.TimeZone;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import com.google.gson.Gson;
 
+import fr.itinerennes.api.client.model.Agency;
+import fr.itinerennes.api.client.model.FeedInfo;
 import fr.itinerennes.api.client.model.Route;
 import fr.itinerennes.api.client.model.ScheduleStopTime;
 import fr.itinerennes.api.client.model.Stop;
@@ -49,7 +53,7 @@ public class GsonSerializationPreviewTest {
     private static final Map<String, ScheduleStopTime> STOP_TIMES = new HashMap<String, ScheduleStopTime>();
     private static final Map<String, TripStopTime> TRIP_STOP_TIMES = new HashMap<String, TripStopTime>();
 
-    private Gson gson = ItineRennesApiGsonFactory.newInstance(true);
+    private static Gson gson = ItineRennesApiGsonFactory.newInstance(true);
     private Date date;
 
     @Before
@@ -58,6 +62,34 @@ public class GsonSerializationPreviewTest {
         // 2012-08-22 00:00
         cal.set(2012, 7, 22, 13, 0);
         this.date = cal.getTime();
+    }
+
+    @Test
+    public void previewFeedInfo() {
+
+        final FeedInfo fi = new FeedInfo();
+        fi.setEnd(new Date());
+        fi.setLang(Locale.FRENCH);
+        fi.setPublisherName("Aaaa Bbbb");
+        fi.setPublisherUrl("http://www.publisher/aaa");
+        fi.setStart(new Date());
+        fi.setVersion("vX");
+
+        preview("FeedInfo", fi);
+    }
+
+    @Test
+    public void previewAgency() {
+
+        final Agency a = new Agency();
+        a.setId("AAA");
+        a.setLang(Locale.FRENCH);
+        a.setName("Aaaa Bbbb");
+        a.setPhone("0123456789");
+        a.setTimezone(TimeZone.getDefault());
+        a.setUrl("http://www.agency.com/aaa");
+
+        preview("Agency", a);
     }
 
     @Test
@@ -71,8 +103,7 @@ public class GsonSerializationPreviewTest {
         ss.getStopTimes().add(getScheduleStopTime("BBB", date, 2, 4));
         ss.getRoutes().add(getRoute("BBB"));
 
-        System.out.println("=== StopSchedule ===");
-        System.out.println(gson.toJson(ss));
+        preview("StopSchedule", ss);
     }
 
     @Test
@@ -83,8 +114,7 @@ public class GsonSerializationPreviewTest {
         ts.getStopTimes().add(getTripStopTime("AAA", 1, date, 8, 3));
         ts.getStopTimes().add(getTripStopTime("AAA", 1, date, 9, 12));
 
-        System.out.println("=== TripSchedule ===");
-        System.out.println(gson.toJson(ts));
+        preview("TripSchedule", ts);
     }
 
     private TripStopTime getTripStopTime(final String routeId, final int stopId, final Date date, final int h, final int m) {
@@ -108,6 +138,10 @@ public class GsonSerializationPreviewTest {
         }
 
         return tst;
+    }
+
+    private static void preview(final String name, final Object o) {
+        System.out.printf("=== [%1$s] ===\n%2$s\n=== [/%1$s] ===\n", name, gson.toJson(o));
     }
 
     private static Stop getStop(final int code) {
