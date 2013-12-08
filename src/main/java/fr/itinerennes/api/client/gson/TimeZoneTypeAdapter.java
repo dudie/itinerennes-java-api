@@ -47,6 +47,6 @@ public class TimeZoneTypeAdapter  implements JsonSerializer<TimeZone>, JsonDeser
     @Override
     public JsonElement serialize(final TimeZone src, final Type typeOfSrc, final JsonSerializationContext context) {
         
-        return new JsonPrimitive(src.toString());
+        return new JsonPrimitive(src.getID());
     }
 }
