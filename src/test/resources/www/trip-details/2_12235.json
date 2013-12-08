@@ -1,0 +1,355 @@
+/*
+ * [license]
+ * ItineRennes Java API client
+ * ----
+ * Copyright (C) 2010 - 2013 Dudie
+ * ----
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the 
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public 
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * [/license]
+ */
+{
+  "headsign": "5 | Lycée Bréquigny",
+  "stopTimes": [
+    {
+      "stop": {
+        "id": "2_1252",
+        "lat": 48.13876768,
+        "lon": -1.66595729,
+        "name": "Patton",
+        "code": 1252
+      },
+      "arrival": 19500,
+      "departure": 19500
+    },
+    {
+      "stop": {
+        "id": "2_1253",
+        "lat": 48.13666007,
+        "lon": -1.66750822,
+        "name": "Monts d\u0027Arrée",
+        "code": 1253
+      },
+      "arrival": 19560,
+      "departure": 19560
+    },
+    {
+      "stop": {
+        "id": "2_1254",
+        "lat": 48.13675375,
+        "lon": -1.67105825,
+        "name": "Neruda",
+        "code": 1254
+      },
+      "arrival": 19620,
+      "departure": 19620
+    },
+    {
+      "stop": {
+        "id": "2_1255",
+        "lat": 48.13455033,
+        "lon": -1.67297749,
+        "name": "Condate",
+        "code": 1255
+      },
+      "arrival": 19680,
+      "departure": 19680
+    },
+    {
+      "stop": {
+        "id": "2_1256",
+        "lat": 48.13264262,
+        "lon": -1.67175832,
+        "name": "Bellangerais",
+        "code": 1256
+      },
+      "arrival": 19740,
+      "departure": 19740
+    },
+    {
+      "stop": {
+        "id": "2_1257",
+        "lat": 48.13269574,
+        "lon": -1.66757286,
+        "name": "Morbihan",
+        "code": 1257
+      },
+      "arrival": 19800,
+      "departure": 19800
+    },
+    {
+      "stop": {
+        "id": "2_1258",
+        "lat": 48.13080831,
+        "lon": -1.66390739,
+        "name": "Houx Cité U.",
+        "code": 1258
+      },
+      "arrival": 19860,
+      "departure": 19860
+    },
+    {
+      "stop": {
+        "id": "2_1259",
+        "lat": 48.12800553,
+        "lon": -1.6645754,
+        "name": "Rochester",
+        "code": 1259
+      },
+      "arrival": 19920,
+      "departure": 19920
+    },
+    {
+      "stop": {
+        "id": "2_1260",
+        "lat": 48.12670281,
+        "lon": -1.66538386,
+        "name": "Gros Chêne",
+        "code": 1260
+      },
+      "arrival": 19980,
+      "departure": 19980
+    },
+    {
+      "stop": {
+        "id": "2_1261",
+        "lat": 48.12528168,
+        "lon": -1.66666402,
+        "name": "Volney",
+        "code": 1261
+      },
+      "arrival": 19980,
+      "departure": 19980
+    },
+    {
+      "stop": {
+        "id": "2_1262",
+        "lat": 48.12147137,
+        "lon": -1.67091812,
+        "name": "Jules Ferry",
+        "code": 1262
+      },
+      "arrival": 20040,
+      "departure": 20040
+    },
+    {
+      "stop": {
+        "id": "2_1263",
+        "lat": 48.11963635,
+        "lon": -1.67422912,
+        "name": "Rectorat",
+        "code": 1263
+      },
+      "arrival": 20100,
+      "departure": 20100
+    },
+    {
+      "stop": {
+        "id": "2_1027",
+        "lat": 48.11723114,
+        "lon": -1.67736823,
+        "name": "Hôtel Dieu",
+        "code": 1027
+      },
+      "arrival": 20160,
+      "departure": 20160
+    },
+    {
+      "stop": {
+        "id": "2_1014",
+        "lat": 48.11371103,
+        "lon": -1.67903599,
+        "name": "Sainte-Anne",
+        "code": 1014
+      },
+      "arrival": 20340,
+      "departure": 20340
+    },
+    {
+      "stop": {
+        "id": "2_1015",
+        "lat": 48.11252173,
+        "lon": -1.68031651,
+        "name": "Champ Jacquet",
+        "code": 1015
+      },
+      "arrival": 20400,
+      "departure": 20400
+    },
+    {
+      "stop": {
+        "id": "2_1024",
+        "lat": 48.10997886,
+        "lon": -1.68021216,
+        "name": "République Nemours",
+        "code": 1024
+      },
+      "arrival": 20580,
+      "departure": 20700
+    },
+    {
+      "stop": {
+        "id": "2_1017",
+        "lat": 48.10834873,
+        "lon": -1.6801754,
+        "name": "Les Halles",
+        "code": 1017
+      },
+      "arrival": 20760,
+      "departure": 20760
+    },
+    {
+      "stop": {
+        "id": "2_1018",
+        "lat": 48.10604754,
+        "lon": -1.68160006,
+        "name": "Plélo Colombier",
+        "code": 1018
+      },
+      "arrival": 20880,
+      "departure": 20880
+    },
+    {
+      "stop": {
+        "id": "2_1019",
+        "lat": 48.1051576,
+        "lon": -1.68471093,
+        "name": "Cité Judiciaire",
+        "code": 1019
+      },
+      "arrival": 20940,
+      "departure": 20940
+    },
+    {
+      "stop": {
+        "id": "2_1264",
+        "lat": 48.10211461,
+        "lon": -1.68438725,
+        "name": "Pont de Nantes",
+        "code": 1264
+      },
+      "arrival": 21000,
+      "departure": 21000
+    },
+    {
+      "stop": {
+        "id": "2_1265",
+        "lat": 48.0997896,
+        "lon": -1.68708791,
+        "name": "Foyer Rennais",
+        "code": 1265
+      },
+      "arrival": 21060,
+      "departure": 21060
+    },
+    {
+      "stop": {
+        "id": "2_1266",
+        "lat": 48.09708914,
+        "lon": -1.68902834,
+        "name": "Mermoz",
+        "code": 1266
+      },
+      "arrival": 21120,
+      "departure": 21120
+    },
+    {
+      "stop": {
+        "id": "2_2219",
+        "lat": 48.09407071,
+        "lon": -1.69057703,
+        "name": "Pilate",
+        "code": 2219
+      },
+      "arrival": 21120,
+      "departure": 21120
+    },
+    {
+      "stop": {
+        "id": "2_2218",
+        "lat": 48.09238093,
+        "lon": -1.69158421,
+        "name": "Saint-Yves",
+        "code": 2218
+      },
+      "arrival": 21180,
+      "departure": 21180
+    },
+    {
+      "stop": {
+        "id": "2_2228",
+        "lat": 48.08980582,
+        "lon": -1.69309127,
+        "name": "Pigeon Blanc",
+        "code": 2228
+      },
+      "arrival": 21240,
+      "departure": 21240
+    },
+    {
+      "stop": {
+        "id": "2_2216",
+        "lat": 48.08728351,
+        "lon": -1.69462978,
+        "name": "Pressoirs",
+        "code": 2216
+      },
+      "arrival": 21300,
+      "departure": 21300
+    },
+    {
+      "stop": {
+        "id": "2_1267",
+        "lat": 48.0857359,
+        "lon": -1.69390359,
+        "name": "Félix Eboué",
+        "code": 1267
+      },
+      "arrival": 21360,
+      "departure": 21360
+    },
+    {
+      "stop": {
+        "id": "2_1268",
+        "lat": 48.08376367,
+        "lon": -1.69360406,
+        "name": "Boberil",
+        "code": 1268
+      },
+      "arrival": 21420,
+      "departure": 21420
+    },
+    {
+      "stop": {
+        "id": "2_1269",
+        "lat": 48.08423941,
+        "lon": -1.69207225,
+        "name": "Lycée Bréquigny",
+        "code": 1269
+      },
+      "arrival": 21480,
+      "departure": 21480
+    }
+  ],
+  "route": {
+    "id": "2_0005",
+    "textColor": "ffffff",
+    "color": "eb8200",
+    "description": "Majeure",
+    "longName": "Patton \u003c\u003e Lycée Bréquigny",
+    "shortName": "5",
+    "type": 3,
+    "agencyId": "2"
+  }
+}
