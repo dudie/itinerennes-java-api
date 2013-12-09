@@ -99,7 +99,7 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
 
     @Override
     public FeedInfo getFeedInfo() throws IOException {
-        final String urlCall = String.format("%s/info.json", baseUrl);
+        final String urlCall = String.format("%s/infos.json", baseUrl);
         return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<FeedInfo>(FeedInfo.class, gson));
     }
 
