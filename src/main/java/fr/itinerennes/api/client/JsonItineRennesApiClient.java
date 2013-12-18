@@ -27,6 +27,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpGet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -81,32 +82,33 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
     /**
      * Creates a generic request to the ItineRennes API. This method will set the request headers.
      * 
-     * @param path
+     * @param url
      *            the url where to make the call
      * @return an {@link HttpGet} to send to execute the request
+     * @throws IOException 
      */
-    private HttpGet createOBARequest(final String path) {
+    private <T> T execute(final String url, final ResponseHandler<T> handler) throws IOException {
 
-        final HttpGet req = new HttpGet(path);
+        final HttpGet req = new HttpGet(url);
         req.addHeader(H_ACCEPT, "application/json");
         req.addHeader(H_ACCEPT, "text/json");
         req.addHeader(H_ACCEPT, "text/plain");
 
-        LOGGER.info("GET: {}", path);
+        LOGGER.info("GET: {}", url);
 
-        return req;
+        return httpClient.execute(req, handler);
     }
 
     @Override
     public FeedInfo getFeedInfo() throws IOException {
         final String urlCall = String.format("%s/infos.json", baseUrl);
-        return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<FeedInfo>(FeedInfo.class, gson));
+        return execute(urlCall, new ApiHttpResponseHandler<FeedInfo>(FeedInfo.class, gson));
     }
 
     @Override
     public Agency getAgency(final String agencyId) throws IOException {
         final String urlCall = String.format("%s/agency/%s.json", baseUrl, agencyId);
-        return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<Agency>(Agency.class, gson));
+        return execute(urlCall, new ApiHttpResponseHandler<Agency>(Agency.class, gson));
     }
 
     /**
@@ -117,7 +119,7 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
     @Override
     public StopWithRoutes getStop(final String stopId) throws IOException {
         final String urlCall = String.format("%s/stop/%s.json", baseUrl, stopId);
-        return httpClient.execute(createOBARequest(urlCall), new ApiHttpResponseHandler<StopWithRoutes>(StopWithRoutes.class, gson));
+        return execute(urlCall, new ApiHttpResponseHandler<StopWithRoutes>(StopWithRoutes.class, gson));
     }
 
     /**
@@ -132,7 +134,7 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
         LOGGER.debug("getTripDetails.start - tripId={}", tripId);
 
         final String urlCall = String.format("%s/trip-details/%s.json", baseUrl, tripId);
-        final TripSchedule schedule = httpClient.execute(createOBARequest(urlCall),
+        final TripSchedule schedule = execute(urlCall,
                 new ApiHttpResponseHandler<TripSchedule>(TripSchedule.class, gson));
 
         LOGGER.debug("getTripDetails.end");
@@ -154,7 +156,7 @@ public class JsonItineRennesApiClient implements ItineRennesApiClient {
         final Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         final String urlCall = String.format("%1$s/schedule-for-stop/%2$tY/%2$tm/%2$td/%3$s.json", baseUrl, date , stopId);
-        final StopSchedule schedule = httpClient.execute(createOBARequest(urlCall),
+        final StopSchedule schedule = execute(urlCall,
                 new StopScheduleHttpResponseHandler(gson));
         schedule.setDate(date);
 
