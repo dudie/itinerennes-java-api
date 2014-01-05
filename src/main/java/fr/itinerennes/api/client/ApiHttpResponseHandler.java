@@ -25,6 +25,7 @@ package fr.itinerennes.api.client;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 
 import org.apache.http.HttpException;
 import org.apache.http.HttpResponse;
@@ -46,6 +47,9 @@ public class ApiHttpResponseHandler<T> implements ResponseHandler<T> {
 
     /** The event logger. */
     private static final Logger LOGGER = LoggerFactory.getLogger(ApiHttpResponseHandler.class);
+
+    /** UTF-8 charset. */
+    private static final String UTF_8 = "utf-8";
 
     private final Class<? extends T> clazz;
 
@@ -75,7 +79,7 @@ public class ApiHttpResponseHandler<T> implements ResponseHandler<T> {
         T tripSchedule = null;
         try {
             in = response.getEntity().getContent();
-            tripSchedule = gson.fromJson(new InputStreamReader(in), clazz);
+            tripSchedule = gson.fromJson(new InputStreamReader(in, UTF_8), clazz);
         } finally {
             if (in != null) {
                 in.close();
