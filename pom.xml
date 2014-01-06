@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
 
     <artifactId>itinerennes-api</artifactId>
     <groupId>fr.itinerennes</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>ItineRennes Java API client</name>
@@ -42,7 +42,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses />.
         <url>https://github.com/dudie/itinerennes-java-api/tree/master</url>
         <connection>scm:git:git@github.com:dudie/itinerennes-java-api.git</connection>
         <developerConnection>scm:git:git@github.com:dudie/itinerennes-java-api.git</developerConnection>
-    </scm>
+      <tag>1.0</tag>
+  </scm>
 
     <ciManagement>
         <system>Travis</system>
